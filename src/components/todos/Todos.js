@@ -10,7 +10,6 @@ class Todos extends Component {
     current: ''
   }
 
-
   deleteTodo = (index) => {
     let Todos = this.state.Todos;
     Todos.splice(index, 1)
@@ -19,6 +18,7 @@ class Todos extends Component {
       Todos
     })
   }
+
   doneTodo = (index) => {
     let Todos = this.state.Todos;
     let Done_todos = this.state.Done_todos;
@@ -33,8 +33,9 @@ class Todos extends Component {
     localStorage.setItem('Done_todos', JSON.stringify(Done_todos));
 
   }
+
+  // function to get what inside the input field
   updateTodo = (e) => {
-    console.log(e.target.value)
     this.setState({
       current: e.target.value
     })
