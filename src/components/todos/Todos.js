@@ -21,16 +21,16 @@ class Todos extends Component {
 
   doneTodo = (index) => {
     let Todos = this.state.Todos;
-    let Done_todos = this.state.Done_todos;
-    Done_todos.push(Todos[index])
+    let Done_Todos = this.state.Done_Todos;
+    Done_Todos.push(Todos[index])
     Todos.splice(index, 1)
     localStorage.setItem('Todos', JSON.stringify(Todos));
     this.setState({
       Todos,
-      Done_todos
+      Done_Todos
     })
 
-    localStorage.setItem('Done_todos', JSON.stringify(Done_todos));
+    localStorage.setItem('Done_Todos', JSON.stringify(Done_Todos));
 
   }
 
