@@ -55,8 +55,10 @@ class Done_Todos extends Component {
         deleteTodo={this.deleteTodo} />
     })
     return (
-      <div>
-        {<ul className="list-container" >{Done_TodosList}</ul>}
+      <div className="Done-todos">
+        <ul className="list-container" >{Done_TodosList}</ul>
+        <button className="clearAllBtn" onClick={() => { this.deleteAll() }}>Clear All</button>
+
       </div>
     )
   }

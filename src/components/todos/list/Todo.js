@@ -12,7 +12,9 @@ class Todo extends Component {
         <span>{this.props.details.name}</span>
         <i className="fas fa-trash-alt " onClick={() => { this.props.deleteTodo(this.props.index) }}></i>
         <i className="fas fa-pen-square " onClick={() => { this.toggleState() }}  ></i>
-        <i className="fas fa-check-square" onClick={() => { this.props.doneTodo(this.props.index) }}></i>
+        {/* <input type="checkbox" onClick={() => { this.props.doneTodo(this.props.index) }} ></input>*/}
+        {<i className="far fa-circle" onClick={() => { this.props.doneTodo(this.props.index) }}></i>}
+
       </li>
 
     )
