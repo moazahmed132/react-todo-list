@@ -26,11 +26,9 @@ class Todo extends Component {
     if (this.input.value.trim() !== "") {
       this.toggleState()
     }
-
   }
 
   renderUpdateForm = () => {
-
     return (
       <form onSubmit={this.updateTodoItem}>
         <input className="form-input"
@@ -39,7 +37,6 @@ class Todo extends Component {
       </form>
     )
   }
-
 
   toggleState = () => {
     let { isEdit } = this.state;

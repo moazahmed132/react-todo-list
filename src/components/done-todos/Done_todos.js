@@ -5,7 +5,6 @@ class Done_Todos extends Component {
   state = {
     Done_Todos: localStorage.getItem('Done_Todos') ? JSON.parse(localStorage.getItem('Done_Todos')) : [],
   }
-
   deleteTodo = (index) => {
     let Done_Todos = this.state.Done_Todos;
     Done_Todos.splice(index, 1)

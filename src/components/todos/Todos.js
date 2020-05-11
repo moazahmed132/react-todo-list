@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Form from './form/Form'
 import Todo from './list/Todo'
-
 class Todos extends Component {
 
   state = {
@@ -29,9 +28,7 @@ class Todos extends Component {
       Todos,
       Done_Todos
     })
-
     localStorage.setItem('Done_Todos', JSON.stringify(Done_Todos));
-
   }
 
   // function to get what inside the input field
@@ -66,7 +63,6 @@ class Todos extends Component {
     })
 
   }
-
   render() {
 
     const { Todos } = this.state;
@@ -80,7 +76,6 @@ class Todos extends Component {
         doneTodo={this.doneTodo} />
     })
     return (
-
       <section className="App" >
         <h2>Todos List</h2>
         <Form
