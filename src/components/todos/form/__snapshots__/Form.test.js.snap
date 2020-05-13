@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Form Component Should render the right way 1`] = `ShallowWrapper {}`;
+
 exports[`InputText Component Should render the right way 1`] = `ShallowWrapper {}`;
